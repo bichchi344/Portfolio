@@ -1,7 +1,15 @@
 {
   "rewrites": [
     {
-      "source": "/(?!api|_next|static|favicon\\.ico|detail|about|contact).*$",
+      "source": "/",
+      "destination": "/"
+    },
+    {
+      "source": "/detail",
+      "destination": "/detail"
+    },
+    {
+      "source": "/:path((?!detail).*)",
       "destination": "/"
     }
   ]
