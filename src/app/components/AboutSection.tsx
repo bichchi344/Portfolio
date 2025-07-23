@@ -6,9 +6,11 @@ export function AboutSection() {
 
       <div className="flex flex-col md:flex-row gap-6 about-layout">
         <div className="md:w-1/3 flex justify-center md:justify-start">
-          <Image 
+          <Image
             src="/images/avatar.jpg"
             alt="Avatar"
+            width={300}
+            height={300}
             className="w-64 h-64 object-cover rounded-full border-2 border-gray-300 shadow-md"
           />
         </div>

@@ -28,6 +28,8 @@ export const ProjectSection = () => {
 
           {/* Ảnh phóng to có hiệu ứng scale và opacity */}
           <Image
+            width={800}
+            height={600}
             src={selectedImage}
             className="relative max-w-[90%] max-h-[90%] rounded shadow-lg z-10 transform transition duration-300 scale-100 opacity-100"
             alt="Enlarged project"

@@ -25,6 +25,8 @@ export default function ProjectDetailPage({ params }: ProjectPageProps) {
                 ></div>
 
                 <Image
+                    width={800}
+                    height={600}
                     src={selectedImage}
                     className="relative max-w-[90%] max-h-[90%] rounded shadow-lg z-10 transform transition duration-300 scale-100 opacity-100"
                     alt="Enlarged project"
@@ -37,6 +39,8 @@ export default function ProjectDetailPage({ params }: ProjectPageProps) {
             )}
             <div className="flex flex-col md:flex-row gap-6 items-center">
                 <Image
+                    width={500}
+                    height={500}
                     src={project.image}
                     alt={project.name}
                     className="w-full md:w-1/3 rounded-xl transition-transform duration-300 hover:scale-105"
