@@ -80,3 +80,5 @@ export default function ProjectDetailPage({ params }: ProjectPageProps) {
         </div>
     );
 }
+
+export const runtime = 'nodejs';
