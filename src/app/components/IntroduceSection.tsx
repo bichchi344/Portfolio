@@ -20,7 +20,7 @@ export function IntroduceSection() {
       <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl font-bold mb-8 text-center">VO THI BICH CHI</h2>
         <p className="text-lg leading-relaxed mb-10 max-w-3xl mx-auto text-center">
-          I'm a passionate web developer with a strong focus on building seamless digital experiences and writing clean, maintainable code. I have hands-on experience in both frontend and backend development, and I enjoy turning ideas into responsive, user-friendly applications. I'm constantly learning and adapting to new technologies to deliver high-quality solutions. Collaboration, creativity, and problem-solving are at the heart of my development approach.
+          I’m a passionate web developer with a strong focus on building seamless digital experiences and writing clean, maintainable code. I have hands-on experience in both frontend and backend development, and I enjoy turning ideas into responsive, user-friendly applications. I’m constantly learning and adapting to new technologies to deliver high-quality solutions. Collaboration, creativity, and problem-solving are at the heart of my development approach.
         </p>
 
         <p className="text-sm text-center text-gray-400">Updated since: {getDaysAgo("2025-07-19")}</p>

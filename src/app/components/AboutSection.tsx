@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export function AboutSection() {
   return (
     <section id="about" className="min-h-screen container mx-auto px-8 md:px-24">
@@ -5,7 +6,7 @@ export function AboutSection() {
 
       <div className="flex flex-col md:flex-row gap-6 about-layout">
         <div className="md:w-1/3 flex justify-center md:justify-start">
-          <img
+          <Image 
             src="/images/avatar.jpg"
             alt="Avatar"
             className="w-64 h-64 object-cover rounded-full border-2 border-gray-300 shadow-md"
@@ -15,7 +16,7 @@ export function AboutSection() {
 
         <div className="md:w-2/3">
           <p className="leading-relaxed mb-6 text-justify">
-            Hello! I'm <span className="text-blue-300">Vo Thi Bich Chi</span>, a passionate <span className="text-blue-300">Software Developer</span> with over 3 years of industry experience. I specialize in crafting clean, efficient, and user-focused solutions. I hold a degree in <span className="text-blue-300">WEB Engineering</span> from Phu Yen University, graduating with a <span className="text-blue-300">Good classification (GPA 3.38/4)</span>.
+            Hello! I’m <span className="text-blue-300">Vo Thi Bich Chi</span>, a passionate <span className="text-blue-300">Software Developer</span> with over 3 years of industry experience. I specialize in crafting clean, efficient, and user-focused solutions. I hold a degree in <span className="text-blue-300">WEB Engineering</span> from Phu Yen University, graduating with a <span className="text-blue-300">Good classification (GPA 3.38/4)</span>.
           </p>
 
           <h3 className="text-2xl text-gray-400 mb-4">My Expertise & Focus</h3>

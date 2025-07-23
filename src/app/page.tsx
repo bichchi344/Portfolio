@@ -1,6 +1,5 @@
 'use client'
 import { useEffect, useState } from 'react'
-import Sidebar from './components/Sidebar'
 import { AboutSection } from './components/AboutSection'
 import { ProjectSection } from './components/ProjectSection'
 import { ContactSection } from './components/ContactSection'
@@ -8,7 +7,7 @@ import { IntroduceSection } from './components/IntroduceSection'
 import { ExperienceSection } from './components/ExperienceSection'
 
 export default function Home() {
-  const [open, setOpen] = useState(false)
+  const [open] = useState(false)
 
   useEffect(() => {
     document.body.classList.toggle('overflow-hidden', open)

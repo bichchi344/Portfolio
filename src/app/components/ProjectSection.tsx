@@ -1,10 +1,11 @@
 'use client'
 
-import { Button, Card, CardActions, CardContent, CardMedia, Link, Typography } from '@mui/material';
+import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material';
 import React from 'react'
 import { useState } from 'react';
 import { projects } from '../data/project-data';
 import ProjectDetailModal from './ProjectDetailModal';
+import Image from 'next/image';
 
 export const ProjectSection = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -26,7 +27,7 @@ export const ProjectSection = () => {
           ></div>
 
           {/* Ảnh phóng to có hiệu ứng scale và opacity */}
-          <img
+          <Image
             src={selectedImage}
             className="relative max-w-[90%] max-h-[90%] rounded shadow-lg z-10 transform transition duration-300 scale-100 opacity-100"
             alt="Enlarged project"

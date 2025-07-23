@@ -1,8 +1,7 @@
 // components/ProjectDetailModal.tsx
 
-import { useState } from "react"
-import { Project, projects } from "../data/project-data"
-
+import { projects } from "../data/project-data"
+import Image from 'next/image';
 interface Props {
     slug: string
     onClose: () => void
@@ -29,7 +28,7 @@ export default function ProjectDetailModal({ slug, onClose }: Props) {
                 </button>
 
                 <div className="flex flex-col md:flex-row gap-6 items-center">
-                    <img
+                    <Image
                         src={project.image}
                         alt={project.name}
                         className="w-full md:w-1/3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
