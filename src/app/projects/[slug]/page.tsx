@@ -5,11 +5,11 @@ import { use, useState } from "react";
 import Image from 'next/image';
 
 interface ProjectPageProps {
-    params: Promise<{ slug: string }>;
+  params: { slug: string };
 }
 
 export default function ProjectDetailPage({ params }: ProjectPageProps) {
-    const { slug } = use(params);
+    const { slug } = params;
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
     const project = projects.find((p) => p.slug === slug);
 
