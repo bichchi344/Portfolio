@@ -1,15 +1,15 @@
 'use client'
 import { projects } from "@/app/data/project-data";
 import { notFound } from "next/navigation";
-import { useState } from "react";
+import { use, useState } from "react";
 import Image from 'next/image';
 
 interface ProjectPageProps {
-  params: { slug: string };
+    params: Promise<{ slug: string }>;
 }
 
 export default function ProjectDetailPage({ params }: ProjectPageProps) {
-    const { slug } = params;
+    const { slug } = use(params);
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
     const project = projects.find((p) => p.slug === slug);
 
