@@ -1,7 +1,7 @@
 'use client'
 import { projects } from "@/app/data/project-data";
 import { notFound } from "next/navigation";
-import { use, useState } from "react";
+import { useState } from "react";
 import Image from 'next/image';
 
 interface ProjectPageProps {
