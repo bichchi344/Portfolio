@@ -10,7 +10,6 @@ import Image from 'next/image';
 export const ProjectSection = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [selectedProject, setSelectedProject] = useState('')
-  const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
 
   return (
     <section id="projects" className="min-h-screen container mx-auto px-8 md:px-24">
