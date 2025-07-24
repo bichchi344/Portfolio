@@ -10,6 +10,8 @@ import Image from 'next/image';
 export const ProjectSection = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [selectedProject, setSelectedProject] = useState('')
+  const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
+
   return (
     <section id="projects" className="min-h-screen container mx-auto px-8 md:px-24">
       {selectedProject && (
@@ -76,16 +78,16 @@ export const ProjectSection = () => {
 
                   {/* View Project: hiện mặc định ở mobile và hover ở md */}
                   <div className="absolute inset-0 flex items-start gap-2 px-2 transition-all duration-500 ease-in-out translate-y-0 md:translate-y-full md:group-hover:translate-y-0">
-                    <a
+                    {/* <a
                       href={`/projects/${project.slug}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="no-underline"
-                    >
-                      <Button  size="small" className="text-black hover:text-blue-600">
+                    > */}
+                      <Button  onClick={() => setSelectedProject(project.slug)} size="small" className="text-black hover:text-blue-600">
                         View Project
                       </Button>
-                    </a>
+                    {/* </a> */}
                   </div>
                 </CardActions>
 
