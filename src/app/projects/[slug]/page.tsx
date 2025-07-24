@@ -8,6 +8,8 @@ interface ProjectPageProps {
     params: Promise<{ slug: string }>;
 }
 
+export const runtime = 'edge';
+
 export default function ProjectDetailPage({ params }: ProjectPageProps) {
     const { slug } = use(params);
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -80,3 +82,4 @@ export default function ProjectDetailPage({ params }: ProjectPageProps) {
         </div>
     );
 }
+
