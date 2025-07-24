@@ -1,16 +1,7 @@
-
 {
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/"
-    },
-    {
-      "source": "/detail",
-      "destination": "/detail"
-    },
-    {
-      "source": "/:path((?!detail).*)",
+      "source": "/:path*",
       "destination": "/"
     }
   ]
